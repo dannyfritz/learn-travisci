@@ -9,7 +9,7 @@ describe('Calculator', function(){
 			var calc = new Calculator();
 			assert.equal(2*2, calc.multiply(2, 2));
 			assert.equal(-1*2, calc.multiply(-1, 2));
-			assert.equal(0*2, calc.multiply(0, 2));
+			assert.equal(1*2, calc.multiply(0, 2));
 		});
 		it('Should throw an error when a non-number is supplied.', function(){
 			var Calculator = require('../dist/calculator.min.js');

@@ -2,7 +2,8 @@
 	'use strict';
 	if (typeof define === 'function' && define.amd) {
 		define(['lodash'], function (_) {
-      return (root.Calculator = factory(_));
+			root.Calculator = factory(_);
+      return (root.Calculator);
     });
 	} else if (typeof exports === 'object') {
 		module.exports = factory(require('lodash'));
