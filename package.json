@@ -1,0 +1,28 @@
+{
+  "name": "learn-travisci",
+  "version": "0.0.0",
+  "description": "learn-travisci ==============",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dannyfritz@github.com/dannyfritz/learn-travisci.git"
+  },
+  "author": "Danny Fritz <dannyfritz@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "6fab4bb527ab4f6c17f342d348e9b582a555f26e",
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "grunt": "~0.4.2",
+    "grunt-travis": "~0.2.3",
+    "grunt-eslint": "~0.3.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-mocha-test": "~0.9.0",
+    "chai": "~1.9.0"
+  }
+}
