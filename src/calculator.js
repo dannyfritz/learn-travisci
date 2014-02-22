@@ -1,11 +1,13 @@
 (function (root, factory) {
 	'use strict';
 	if (typeof define === 'function' && define.amd) {
-		define(['lodash'], factory);
+		define(['lodash'], function (_) {
+      return (root.Calculator = factory(_));
+    });
 	} else if (typeof exports === 'object') {
 		module.exports = factory(require('lodash'));
 	} else {
-		root.returnExports = factory(root.lodash);
+		root.Calculator = factory(root.lodash);
 	}
 }(this, function (_) {
 	'use strict';
